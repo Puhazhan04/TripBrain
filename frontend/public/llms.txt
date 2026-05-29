@@ -1,0 +1,33 @@
+# TripBrain
+
+> KI-gestützter Reiseplaner, der personalisierte Tagesreisepläne basierend auf Interessen, Budget und Wetter erstellt.
+
+## Was ist TripBrain?
+
+TripBrain ist eine Web-App, die mithilfe von KI (Google Gemini) vollständige, tagesweise strukturierte Reisepläne für jede Stadt der Welt generiert. Der Nutzer gibt Reiseziel, Reisedauer, Budget und Interessen ein – TripBrain erstellt daraus einen optimierten Reiseplan mit Aktivitäten, Kosten und Wetterinfos.
+
+## Funktionen
+
+- KI-generierte Reisepläne (Tag für Tag)
+- Wetterbasierte Aktivitätsplanung (Open-Meteo API)
+- Interaktive Karte mit Sehenswürdigkeiten (Leaflet.js)
+- Budgetkategorien: Günstig, Mittelklasse, Luxus
+- Interessensfilter: Natur, Essen, Museen, Abenteuer, Shopping
+- Gespeicherte Reisen mit Archiv
+
+## Technologie-Stack
+
+- **Frontend**: React, TypeScript, Vite, Tailwind CSS
+- **Backend**: ASP.NET Core (.NET 9), C#
+- **Datenbank**: SQLite (via Entity Framework Core)
+- **KI**: Google Gemini API
+- **Karte**: Leaflet.js + OpenStreetMap
+- **Wetter**: Open-Meteo API
+- **Geocoding**: Nominatim (OpenStreetMap)
+
+## API-Endpunkte
+
+- `POST /api/trips` – Neuen Reiseplan generieren
+- `GET /api/trips` – Alle gespeicherten Reisen abrufen
+- `GET /api/trips/{id}` – Einzelne Reise abrufen
+- `DELETE /api/trips/{id}` – Reise löschen
